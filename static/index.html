@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bulk Mailer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" id="bootstrap-css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <div id="formLogin">
+        <div class="col-sm-12">
+        <div id="loginform_container">
+            <h1 class="text-center" style="padding-bottom: 2%;">Login Form</h1>
+            <form id        =   "uploadForm"
+                  enctype   =   "multipart/form-data"
+                  action    =   "sendmail"
+                  method    =   "post"
+                  onsubmit  =   "return test();">
+                <div class="form-group">
+                    <label for="email">Choose Excel file(.xlsx or .xls):</label>
+                    <input type="file" name="file" id="file" class="form-control"/>                   
+                </div>
+           
+                 <div class="form-group">
+                  <label for="email">Sbuject :</label>
+                  <input type="text" class="form-control"  placeholder="Enter Title" id="subject" name="subject">
+                </div>
+                <div class="form-group">
+                  <label for="email">Message :</label>
+                    <textarea class="form-control"  placeholder="Enter content of message" id="message" name="message"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-4"><button type="submit" name="submit" class="btn btn-success">Submit</button></div>
+                </div>
+            </form>
+        </div>
+
+     </div>
+
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
